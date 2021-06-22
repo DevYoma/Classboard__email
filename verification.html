@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBoard</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: whitesmoke;            
+        }
+
+        .container{
+            height: 100vh;
+        }
+
+        .card{
+            max-width: 600px;
+            height: 412px;
+            margin: 0 auto;
+        }
+
+        .card__header{
+            height: 84px;
+            display: flex;
+            align-items: center;
+            background: #EDF5FC;
+        }
+
+        .card__header > h3{
+            font-size: 18.21px;
+            color: #1380EC;
+            font-weight: 500;
+        }
+
+        .card__header > img{
+            height: 18.21px;
+            margin-right: 11px;
+            margin-left: 40px;
+        }
+
+
+        .card__body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height:328px ;
+            background: white;
+        }
+
+        .card__main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+        }
+
+        .card__main > p, 
+        .card__footer > p {
+            margin-left: 40px;
+        }
+
+        
+
+        @media screen and (max-width: 400px) {
+            .card__header > img{
+                margin-left: 20px;
+            }
+
+            .card__main > p, 
+            .card__footer > p {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card__header">
+                <img src="./assets/logo.png" alt="logo">
+                <h3>ClassBoard</h3>
+            </div>
+
+            <div class="card__body">
+                <div class="card__main">
+                    <p>Hi, there,</p>
+                    <p>Signing up? Use code <b>312748</b> to verify your email address</p>
+                    <p>This code expires in <b>15 minutes</b></p>
+                    <p>If you didn't request this code, you can safely ignore this email.</p>
+                </div>
+    
+                <div class="card__footer">
+                    <p>Product Mafia</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
